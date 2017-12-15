@@ -49,7 +49,7 @@ void loop() {
   for (int i = 0; i < SAMPLES; i++) {
     newTime = micros()-oldTime;
     oldTime = newTime;
-    vReal[i] = analogRead(A0); // A conversion takes about 1mS on an ESP8266
+    vReal[i] = analogRead(VP); // Either input VP or VN, if your compiler does not have a pin number for VP/VN use 36/39 respectively 
     vImag[i] = 0;
     while (micros() < (newTime + sampling_period_us)) { /* do nothing to wait */ }
   }
