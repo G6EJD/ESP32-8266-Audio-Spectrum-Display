@@ -14,7 +14,8 @@
 */
 
 #include <Wire.h>
-#include "arduinoFFT.h" // Standard Arduino FFT library
+#include "arduinoFFT.h" // Standard Arduino FFT library 
+// https://github.com/kosme/arduinoFFT, in IDE, Sketch, Include Library, Manage Library, then search for FFT
 arduinoFFT FFT = arduinoFFT();
 /////////////////////////////////////////////////////////////////////////
 // Comment out the display your nNOT using e.g. if you have a 1.3" display comment out the SSD1306 library and object
